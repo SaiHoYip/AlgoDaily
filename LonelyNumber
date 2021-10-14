@@ -1,14 +1,12 @@
 def lonely_number(numbers):
     lonely = []
-    
-    for a in range(len(numbers)):
-      numbers.sort()
-      while len(numbers) != 1:
-        if numbers[0] == numbers[1]:
-          numbers.pop(1)
-          numbers.pop(0)
-        else:
-          lonely += numbers[0]
+    numbers.sort()
+    while len(numbers) != 1:
+      if numbers[0] == numbers[1]:
+        numbers.pop(1)
+        numbers.pop(0)
+      else:
+        lonely += numbers[0]
     return numbers[0]
       
 c = [3,2,4,4,2,3,6]
