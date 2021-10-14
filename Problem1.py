@@ -1,3 +1,5 @@
+#LIFO (Last in first out is possible here)
+
 def reverse_string(str1):
 
   stack = ''
